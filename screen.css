@@ -1,5 +1,9 @@
 html,
 body {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.3;
     background-color: #000000;
     color: #ffffff;
     animation: fadeIn 10s linear;
