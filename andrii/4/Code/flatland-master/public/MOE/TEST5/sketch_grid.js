@@ -62,7 +62,7 @@ class Machine extends defaultMachine {
             this.setPosition(this.myownvariable_centerx + 30 + sin(millis() / this.milrandom % this.amplit),
 
                 this.myownvariable_centery + sin(millis() * this.xs) * this.rad);
-              
+
         }
 
 
@@ -85,8 +85,8 @@ let margin = 200; // wieviel rand (open, unten, rechts, links)
 function setup() {
     createCanvas(windowWidth, windowHeight, WEBGL);
     // create a global grid 
-    for (var y = 0; y < maxpoints; y++) { 
-        for (var x = 0; x < maxpoints; x++) { 
+    for (var y = 0; y < maxpoints; y++) {
+        for (var x = 0; x < maxpoints; x++) {
             var v = createVector(
                 map(x, 0, maxpoints - 1, -(width / 3.5) + margin, (width / 3.5) - margin),
                 map(y, 0, maxpoints - 1, -(height / 2) + margin, (height / 2) - margin)
