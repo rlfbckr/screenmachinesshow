@@ -81,8 +81,11 @@ let grid = [];
 let maxpoints = 15; // wieviele punkte
 let margin = 200; // wieviel rand (open, unten, rechts, links)
 
+
 // local stuff
 function setup() {
+
+
     createCanvas(windowWidth, windowHeight, WEBGL);
     // create a global grid 
     for (var y = 0; y < maxpoints; y++) {
@@ -100,6 +103,8 @@ function setup() {
     flatland = new Flatland(); // connect to the flatland server
     initGui();
     initSocketIO(flatlandConfig.server);
+    flatlandConfig.debug = false;
+    gui.hide();
 }
 
 function draw() {
